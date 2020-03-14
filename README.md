@@ -44,3 +44,6 @@ Bonus points if you add http:// in front of the load balancer DNS Name in the ou
 <b>Starter Code</b>
 You will find starter code for the project in the <a href='https://video.udacity-data.com/topher/2019/July/5d391e8b_final-project-starter/final-project-starter.yml' blank='_'>.yaml</a> file, also located in the Resources section of the left sidebar of this page.
 
+<h2>Run Scripts</h2>
+> sh ./create.sh udacity-project2  network.yml network-params.json
+> sh ./create.sh udacity-proj2-servers servers.yml servers-params.json
