@@ -46,4 +46,5 @@ You will find starter code for the project in the <a href='https://video.udacity
 
 <h2>Run Scripts</h2>
 > sh ./create.sh udacity-project2  network.yml network-params.json
+</br>
 > sh ./create.sh udacity-proj2-servers servers.yml servers-params.json
