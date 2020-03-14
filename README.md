@@ -1,4 +1,11 @@
 # Udacity-CloudDevOps-Project2
+<ul>
+  <li>Project Introduction</li>
+  <li>Problem</li>
+  <li>Project Requirements</li>
+  <li>Run Scripts</li>
+  <li>URL</li>
+</ul>
 <h2>Project Introduction</h2>
 
 As your final project, you'll be faced with a real scenario.
@@ -24,7 +31,7 @@ This needs to be done in an automated fashion so that the infrastructure can be 
 
 You'll need to create a Launch Configuration for your application servers in order to deploy four servers, two located in each of your private subnets. The launch configuration will be used by an auto-scaling group.
 
-You'll need two vCPUs and at least 4GB of RAM. The Operating System to be used is Ubuntu 18. So, choose an Instance size and Machine Image (AMI) that best fits this spec. Be sure to allocate at least 10GB of disk space so that you don't run into issues. 
+You'll need two vCPUs and at least 4GB of RAM. The Operating System to be used is Ubuntu 18. So, choose an Instance size and Machine Image (AMI) that best fits this spec. Be sure to allocate at least 10GB of disk space so that you don't run into issues.
 
 <b>Security Groups and Roles</b>
 
@@ -42,9 +49,18 @@ One of the output exports of the CloudFormation script should be the public URL 
 Bonus points if you add http:// in front of the load balancer DNS Name in the output, for convenience.
 
 <b>Starter Code</b>
-You will find starter code for the project in the <a href='https://video.udacity-data.com/topher/2019/July/5d391e8b_final-project-starter/final-project-starter.yml' blank='_'>.yaml</a> file, also located in the Resources section of the left sidebar of this page.
+You will find starter code for the project in the <a href='https://video.udacity-data.com/topher/2019/July/5d391e8b_final-project-starter/final-project-starter.yml' target="_blank">.yaml</a> file, also located in the Resources section of the left sidebar of this page.
 
 <h2>Run Scripts</h2>
+<p>Before running the scripts, you have to create IAM role first, role name is <b>UdacityS3ReadOnlyEC2</b>, check <a target="_blank" href='https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html'>link</a>. </br>
+</p>
+
+<p>
+If you want to use another role name, make sure the script is updated at servers.yml.
+</p>
 > sh ./create.sh udacity-project2  network.yml network-params.json
 </br>
 > sh ./create.sh udacity-proj2-servers servers.yml servers-params.json
+
+<h2>URL</h2>
+Result URL: <a target="_blank" href='http://udaci-webap-5hrauiisv9vo-337289000.us-west-2.elb.amazonaws.com/'>http://udaci-webap-5hrauiisv9vo-337289000.us-west-2.elb.amazonaws.com/</a>
